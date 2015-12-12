@@ -61,6 +61,7 @@ char* decode(int i){
         return ch;
     }else{
         remember=0;
+        return ch;//
     }
 
     switch(i){
