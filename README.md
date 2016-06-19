@@ -10,6 +10,7 @@
 4. Now run **TrojanCockroach.exe**.
 5. Then insert a pendrive in your PC (see the magic!).
 6. Now, insert the USB-Drive in the subject's PC and run the created shortcut for affecting.
+7. After getting the email run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
 
 **Note:** I do not want newbies to abuse my project, so I am not revealing all the secrets. But I do believe that a real learner will learn a lot from this.
 
