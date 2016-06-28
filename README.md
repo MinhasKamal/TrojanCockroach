@@ -1,4 +1,4 @@
-# Trojan Cockroach
+# :smiling_imp: Trojan Cockroach
 #### An Undetectable Trojan Spyware
 
 <a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is an undetectable **Trojan Virus** that steals data (ID, password; every key stroke) from PC and emails it back to the author. It spreads among PCs through USB drives.
