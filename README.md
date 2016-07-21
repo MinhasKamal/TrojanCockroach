@@ -1,4 +1,5 @@
-# :smiling_imp: Trojan Cockroach
+# :smiling_imp: Trojan Cockroach &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter](https://badges.gitter.im/MinhasKamal/TrojanCockroach.svg)](https://gitter.im/MinhasKamal/TrojanCockroach?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
 #### An Undetectable Trojan Spyware
 
 <a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is an undetectable **Trojan Virus** that steals data (ID, password; every key stroke) from PC and emails it back to the author. It spreads among PCs through USB drives.
