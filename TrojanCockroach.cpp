@@ -1,7 +1,7 @@
 /**
 * Developer: Minhas Kamal (BSSE-0509, IIT, DU)
 * Date: 15.Aug.2014, 28.Sep.2015
-* Comment: Practically undetectable trojan spy-ware.
+* Comment: An Undetectable Trojan Spyware
 **/
 
 #include <windows.h>
