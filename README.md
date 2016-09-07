@@ -12,7 +12,7 @@
   4. Now run **TrojanCockroach.exe**.
   5. Then insert a pendrive in your PC (see the magic!).
   
-Here, I have changed all the file names (You do not wish to keep these- 'TrojanCockroach', 'Infect', names right? You will need to change the code a little too) and this is how they look-
+Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
 
 <div align="center">
   <img src="https://cloud.githubusercontent.com/assets/5456665/18255358/cbaf8484-73ca-11e6-99a0-a5a52f65f8a0.PNG" alt="Key-Logger"/>
