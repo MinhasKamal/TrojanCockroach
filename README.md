@@ -27,7 +27,7 @@ Here, I have changed all the file names (you do not wish to keep these- 'TrojanC
   2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that --- --- ---.
   3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
 
-You can get a more clear understanding of the project from its pre-project- **[KeyLogger](https://github.com/MinhasKamal/KeyLogger)**.
+You can get a more clear understanding of the project from its pre-project- **[SmartKeyLogger](https://github.com/MinhasKamal/SmartKeyLogger)**.
 
 **Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. The 'README' is not easy to understand either. I have also made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
 
