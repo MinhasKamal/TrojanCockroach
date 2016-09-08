@@ -12,11 +12,11 @@
   4. Now run **TrojanCockroach.exe**.
   5. Then insert a pendrive in your PC (see the magic!).
   
-Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
-
-<div align="center">
-  <img src="https://cloud.githubusercontent.com/assets/5456665/18255358/cbaf8484-73ca-11e6-99a0-a5a52f65f8a0.PNG" alt="Key-Logger"/>
-</div>
+  Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
+  
+  <div align="center">
+    <img src="https://cloud.githubusercontent.com/assets/5456665/18255358/cbaf8484-73ca-11e6-99a0-a5a52f65f8a0.PNG" alt="Key-Logger"/>
+  </div>
 
 2. Attack
   1. Now, insert the USB-Drive in the subject's PC (Yes, you have to start the spreading process from somewhere!)
