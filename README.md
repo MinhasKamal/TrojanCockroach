@@ -29,7 +29,7 @@ Here, I have changed all the file names (you do not wish to keep these- 'TrojanC
 
 You can get a more clear understanding of the project from its pre-project- **[KeyLogger](https://github.com/MinhasKamal/KeyLogger)**.
 
-**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. I also have made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
+**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. The 'README' is not easy to understand either. I have also made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
 
 I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
 
