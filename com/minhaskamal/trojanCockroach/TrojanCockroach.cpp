@@ -137,7 +137,7 @@ bool checkRecordSize()
         myfile.close();
     }
 
-    if(noOfLines<MIN_RECORD_SIZE*2){
+    if(noOfLines<MIN_RECORD_SIZE*2){ // :)
         return false;
     }else{
         return true;
