@@ -19,11 +19,10 @@ This project is created only for learning purpose.
 
 2. Preparation
   1. Change the method **sendData()** of TrojanCockroach.cpp- place your email and password in the command.
-  2. Compile **TrojanCockroach.cpp** & **Infect.cpp**. **Transmit.exe** is actually the executable distribution of (curl)[https://curl.haxx.se] for Windows.
+  2. Compile **TrojanCockroach.cpp** & **Infect.cpp**. **Transmit.exe** is actually the executable distribution of [curl](https://curl.haxx.se) for Windows.
   3. Place **TrojanCockroach.exe**, **Infect.exe**, **Transmit.exe**, **Infect.lnk** & **TrojanCockroach.lnk** in the same folder.
   
-  Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
-  
+    Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
   <div align="center">
     <img src="https://cloud.githubusercontent.com/assets/5456665/18255358/cbaf8484-73ca-11e6-99a0-a5a52f65f8a0.PNG" alt="Key-Logger"/>
   </div>
@@ -39,7 +38,7 @@ This project is created only for learning purpose.
   2. After getting the email copy the full message to a text file. As the message has come through email certain characters are converted. To resolve that --- --- ---. 
   3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming). 
 
-You may read (TrojanCockroachStory)[https://github.com/MinhasKamal/TrojanCockroach/blob/master/TrojanCockroachStory.md] to get an overview of how it works. You will get a more clear understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
+You may read [TrojanCockroachStory](https://github.com/MinhasKamal/TrojanCockroach/blob/master/TrojanCockroachStory.md) to get an overview of how it works. You will get a more clear understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
 
 **Note:** I do not want newbies to abuse my project, so I am **keeping some simple secrets unrevealed**. There are also some intentionally created holes in this 'README'. I have made some nonsense changes in the code too, so that no one can run it effectively without getting his hands dirty.
 
