@@ -18,20 +18,21 @@ This project is created only for learning purpose.
 
 ### Setup
 1. Preparation
-  1. Change the method **sendData()** of TrojanCockroach.cpp- place your email and password in the command.
+  1. Download the full package from [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/TrojanCockroach/tree/master/com/minhaskamal/trojanCockroach).
+  2. Change the method **sendData()** of TrojanCockroach.cpp- place your email and password in the command.
 
     <div align="center">
       <img src="https://cloud.githubusercontent.com/assets/5456665/21505255/c5c3db2e-cc8f-11e6-834f-1312e566a7ed.png" alt="change email address" width="600px" height=auto/>
     </div>
   
-  2. Compile **TrojanCockroach.cpp** & **Infect.cpp**. **Transmit.exe** is actually the executable distribution of [curl](https://curl.haxx.se) for Windows.
-  3. Place **TrojanCockroach.exe**, **Infect.exe**, **Transmit.exe**, **Infect.lnk** & **TrojanCockroach.lnk** in the same folder. This is how they look-
+  3. Compile **TrojanCockroach.cpp** & **Infect.cpp**. **Transmit.exe** is actually the executable distribution of [curl](https://curl.haxx.se) for Windows.
+  4. Place **TrojanCockroach.exe**, **Infect.exe**, **Transmit.exe**, **Infect.lnk** & **TrojanCockroach.lnk** in the same folder. This is how they look-
   
     <div align="center">
       <img src="https://cloud.githubusercontent.com/assets/5456665/21505256/c5c4a982-cc8f-11e6-9b12-147fa7630e0f.png" alt="Trojan Cockroach full package" width=auto height=100px/>
     </div>
 
-  4. Now run **TrojanCockroach.exe** and insert a pendrive (see the magic!). You will get a hidden folder and link file in your pendrive. The hidden folder contains the full package, & the link file is actually renamed form of Infect.lnk.
+  5. Now run **TrojanCockroach.exe** and insert a pendrive (see the magic!). You will get a hidden folder and link file in your pendrive. The hidden folder contains the full package, & the link file is actually renamed form of Infect.lnk.
   
     <div align="center">
       <img src="https://cloud.githubusercontent.com/assets/5456665/21505254/c5c0394c-cc8f-11e6-99be-16175b741c2a.PNG" alt="Trojan Cockroach infected pendrive" width=auto height=100px/>
