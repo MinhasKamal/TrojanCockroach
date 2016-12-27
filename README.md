@@ -4,9 +4,9 @@
 
 #### A Stealthy Trojan Spyware
 
-<a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later) and emails it back to the author. It spreads among PCs through USB drives. It is almost undetectable to any antivirus software.
+<a href="https://MinhasKamal.github.io/TrojanCockroach">This program</a> is a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later) and emails it back to the host. It spreads among PCs through USB drives. It is almost undetectable to any antivirus software.
 
-This project is created only for learning purpose.
+*This project is created only for learning purpose.*
 
 ### Intro
 - [TrojanCockroach.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.cpp)- logs user's data, sends data through Transmit.exe, infects portable drive.
@@ -63,9 +63,9 @@ This project is created only for learning purpose.
 ### Further 
 You may read [TrojanCockroachStory](https://github.com/MinhasKamal/TrojanCockroach/blob/master/TrojanCockroachStory.md) to get an overview of how the program works. You will get a clearer understanding of the project from its pre-project- **[StupidKeyLogger](https://github.com/MinhasKamal/StupidKeyLogger)**.
 
-The project is perfectly runnable. But I do not want newbies to abuse my project, so I am **keeping some simple secrets unrevealed**. There are also some intentionally created holes in this 'README'. I have made some nonsense changes in the code too, so that no one can run it effectively without getting his hands dirty. I believe these plain obstacles can easily be overcome by actual programmers.
+The project is perfectly runnable. But I do not want newbies to abuse my project, so I am **keeping some simple secrets unrevealed**. There are also some intentionally created **holes in this 'README'**. I have made some **nonsense changes in the code** too, so that no one can run it effectively without getting his hands dirty. I believe these plain obstacles can easily be overcome by ***actual programmers***.
 
-**Note:** I will not also take any responsibility of someone else's ill act with my program. But I do believe that a real learner will learn a lot from this.
+**Note:** *I will not also take any responsibility of someone else's ill act with my program.* But I do believe that a real learner will learn a lot from this.
 
 
 ### License
