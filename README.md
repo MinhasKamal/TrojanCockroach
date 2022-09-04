@@ -1,5 +1,7 @@
 <h1> <img src="https://cloud.githubusercontent.com/assets/5456665/22564601/52428212-e9af-11e6-8150-5d1ff05bbfa8.png" width="24" height=auto /> Trojan Cockroach</h1>
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=5KR6BA9MYTM62&no_recurring=0&currency_code=USD)
+
 #### A Stealthy Trojan Spyware
 
 You are looking at a **Trojan Virus** that steals data (ID, password; every key stroke) from PC (Windows XP or later), then emails them back to you. It spreads among PCs through USB drives, and is almost undetectable to any antivirus software.
